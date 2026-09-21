@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>SOS Infantil — Remédios Caseiros de Geração em Geração</title>
+  <meta name="description" content="Descubra os conhecimentos e receitas caseiras que nossas mães e avós aprenderam e passaram de geração em geração. Um caderno digital completo no seu celular.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="SOS Infantil — Remédios Caseiros de Geração em Geração">
+  <meta property="og:description" content="Descubra os segredos caseiros e receitas naturais que passaram de vó para mãe, agora organizados no seu celular.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/produto-hero.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+  
+  <!-- Estilos Customizados -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       PARTE I — QUIZ DE DIAGNÓSTICO E RESGATE NATURAL (14 TELAS)
+       ======================================================================== -->
+  <div id="quizWrapper">
+    <!-- Header Sticky com Progresso -->
+    <header class="quiz-header">
+      <div class="quiz-header-inner">
+        <div class="quiz-nav-row">
+          <button id="btnBack" class="btn-back" aria-label="Voltar para a etapa anterior">
+            <span>←</span>
+            <span>Voltar</span>
+          </button>
+          <span id="stepIndicator" class="step-badge">Etapa 1 de 14</span>
+        </div>
+        <div class="progress-bar-track">
+          <div id="progressBarFill" class="progress-bar-fill"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Container Centralizado do Quiz -->
+    <main class="quiz-wrapper">
+      <div class="quiz-container">
+        <div id="quizCard" class="quiz-card">
+          <!-- Injetado dinamicamente pelo js/app.js -->
+        </div>
+      </div>
+    </main>
+  </div>
+
+
+  <!-- ========================================================================
+       PARTE II — PÁGINA DE VENDAS DE ALTA CONVERSÃO
+       ======================================================================== -->
+  <div id="salesPage" class="sales-page">
+    
+    <!-- Barra Superior de Aviso & Desconto Liberado (Texto Harmônico e Cronômetro de 15 Minutos) -->
+    <div class="top-notice-bar">
+      <div class="top-notice-content">
+        <span class="top-notice-text">🌿 Seu resultado está pronto! Condição especial disponível por:</span>
+        <span class="countdown-badge">⏱️ <span id="countdownTimer">15:00</span></span>
+      </div>
+    </div>
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section">
+      <span class="heritage-badge">🌿 RECEITAS E SEGREDOS PASSADOS DE GERAÇÃO EM GERAÇÃO</span>
+      
+      <h1 class="hero-headline font-heading">
+        QUANDO SEU FILHO NÃO ESTÁ BEM, VOCÊ SABE QUAL RECEITA CASEIRA USAR?
+      </h1>
+      
+      <p class="hero-subheadline">
+        Descubra os conhecimentos e receitas caseiras que nossas mães e avós aprenderam e passaram de geração em geração.
+      </p>
+
+      <div class="hero-complement">
+        🍯 Mel, canela, cebola, cravo, gengibre, frutas, legumes e outros ingredientes da sabedoria popular reunidos em um só lugar.
+      </div>
+
+      <!-- Mockup Realista 3D com a Foto Oficial do Produto -->
+      <div class="hero-mockup-wrapper">
+        <div class="hero-mockup-frame">
+          <img src="assets/images/produto-hero.jpg" alt="SOS Infantil — Remédios Caseiros de Geração em Geração" loading="eager">
+          <div class="floating-badge">
+            <span>✨</span>
+            <span>Material Digital em PDF</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Principal da Hero -->
+      <div style="margin: 20px 0 16px;">
+        <a href="https://pay.cakto.com.br/a8cwrvz_1124406" target="_blank" rel="noopener" class="btn-cta pulse-animation btn-trigger-checkout">
+          <span>QUERO CRIAR MEU FILHO A PROVA DE DOENÇAS</span>
+          <span class="btn-arrow-icon">👉</span>
+        </a>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">
+        <span>🔒 Acesso Vitalício</span>
+        <span>•</span>
+        <span>📱 Leitura no Celular</span>
+        <span>•</span>
+        <span>⚡ Envio Imediato</span>
+      </div>
+    </section>
+
+    <!-- 2. SEÇÃO: O QUE NOSSAS AVÓS JÁ SABIAM -->
+    <section class="section-container" style="background: #FFFFFF; border-radius: var(--radius-lg); margin-bottom: 40px;">
+      <div class="section-header">
+        <span class="heritage-badge">👵 SABEDORIA DE FAMÍLIA</span>
+        <h2 class="section-title font-heading">🌿 O QUE NOSSAS AVÓS JÁ SABIAM</h2>
+        <p class="section-subtitle">
+          Antes de existir uma infinidade de informações confusas na internet, nossas mães e avós já tinham seus próprios conhecimentos para acolher e cuidar dos pequenos.<br><br>
+          Elas conheciam ingredientes simples da cozinha e sabiam como incorporá-los aos cuidados cotidianos e à alimentação da família.
+        </p>
+      </div>
+
+      <div class="ingredients-showcase">
+        <div class="ingredient-card">
+          <span class="ing-big-icon">🍯</span>
+          <h4>MEL PURO</h4>
+          <p>Aconchego natural para garganta e base de caldos reconfortantes.</p>
+        </div>
+        <div class="ingredient-card">
+          <span class="ing-big-icon">🌿</span>
+          <h4>CANELA</h4>
+          <p>Aroma tradicional e calor que traz sensação de bem-estar imediata.</p>
+        </div>
+        <div class="ingredient-card">
+          <span class="ing-big-icon">🧅</span>
+          <h4>CEBOLA</h4>
+          <p>O segredo clássico por trás dos xaropes caseiros mais famosos.</p>
+        </div>
+        <div class="ingredient-card">
+          <span class="ing-big-icon">🌰</span>
+          <h4>CRAVO</h4>
+          <p>Propriedades reconfortantes passadas através de chás e infusões.</p>
+        </div>
+        <div class="ingredient-card">
+          <span class="ing-big-icon">🫚</span>
+          <h4>GENGIBRE</h4>
+          <p>Vitalidade milenar para ajudar na recuperação e aquecer o corpo.</p>
+        </div>
+        <div class="ingredient-card">
+          <span class="ing-big-icon">🥕</span>
+          <h4>CENOURA</h4>
+          <p>Nutrição densa e doçura natural que as crianças adoram comer.</p>
+        </div>
+        <div class="ingredient-card">
+          <span class="ing-big-icon">❤️</span>
+          <h4>BETERRABA</h4>
+          <p>Símbolo tradicional de força, vigor e riqueza em vitaminas.</p>
+        </div>
+        <div class="ingredient-card">
+          <span class="ing-big-icon">🍎</span>
+          <h4>FRUTAS</h4>
+          <p>A verdadeira farmácia da natureza repleta de fibras e defesas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SEÇÃO: COMPARATIVO VIDA ANTES VS DEPOIS -->
+    <section class="section-container">
+      <div class="section-header">
+        <span class="heritage-badge">⚖️ A TRANSFORMAÇÃO NA SUA ROTINA</span>
+        <h2 class="section-title font-heading">Menos Ansiedade, Mais Certeza</h2>
+        <p class="section-subtitle">
+          Veja a diferença entre improvisar sem orientação e ter um verdadeiro guia de consulta na palma da mão:
+        </p>
+      </div>
+
+      <div class="comparison-grid">
+        <!-- 🌧️ Vida Antes -->
+        <div class="comparison-box box-before">
+          <div class="comparison-header">
+            <span style="font-size: 2rem;">🌧️</span>
+            <div>
+              <h3>A Vida Antes do SOS Infantil</h3>
+              <p style="font-size: 0.82rem; color: #7F1D1D;">Informações espalhadas, insegurança e improviso</p>
+            </div>
+          </div>
+          <ul class="comparison-list">
+            <li><span class="icon-cross">❌</span> <span>Lembra de uma receita que sua mãe ou avó ensinou, mas esqueceu como fazer.</span></li>
+            <li><span class="icon-cross">❌</span> <span>Quando a criança não está bem, começa a procurar dicas diferentes na internet.</span></li>
+            <li><span class="icon-cross">❌</span> <span>Encontra receitas espalhadas e não sabe quais ingredientes são usados.</span></li>
+            <li><span class="icon-cross">❌</span> <span>Tem vários ingredientes em casa, mas não sabe como eles podem fazer parte dos cuidados e da alimentação.</span></li>
+            <li><span class="icon-cross">❌</span> <span>Quer fortalecer a alimentação da criança, mas fica sem ideias.</span></li>
+            <li><span class="icon-cross">❌</span> <span>Não sabe quais frutas e alimentos podem fazer parte de uma alimentação mais nutritiva.</span></li>
+            <li><span class="icon-cross">❌</span> <span>Fica perdida com as quantidades de comida adequadas para cada idade.</span></li>
+            <li><span class="icon-cross">❌</span> <span>Gostaria de ter os conhecimentos tradicionais da família reunidos em um único lugar.</span></li>
+            <li><span class="icon-cross">❌</span> <span>Acaba esquecendo os pequenos segredos de cuidado que passaram de geração em geração.</span></li>
+          </ul>
+        </div>
+
+        <!-- 🌿 Vida Depois -->
+        <div class="comparison-box box-after">
+          <div class="comparison-header">
+            <span style="font-size: 2rem;">🌿</span>
+            <div>
+              <h3>A Vida Depois do SOS Infantil</h3>
+              <p style="font-size: 0.82rem; color: #064E3B;">Tudo organizado, simples e fácil de consultar</p>
+            </div>
+          </div>
+          <ul class="comparison-list">
+            <li><span class="icon-check">✅</span> <span>Receitas caseiras tradicionais reunidas em um único lugar.</span></li>
+            <li><span class="icon-check">✅</span> <span>Conhece melhor ingredientes como mel, canela, cebola, cravo e gengibre.</span></li>
+            <li><span class="icon-check">✅</span> <span>Descobre formas tradicionais de aproveitar ingredientes simples que já fazem parte da cozinha.</span></li>
+            <li><span class="icon-check">✅</span> <span>Aprende mais sobre frutas, vitaminas e nutrientes.</span></li>
+            <li><span class="icon-check">✅</span> <span>Encontra conteúdos para melhorar a alimentação da criança.</span></li>
+            <li><span class="icon-check">✅</span> <span>Tem uma tabela prática de quantidade de comida por idade.</span></li>
+            <li><span class="icon-check">✅</span> <span>Resgata conhecimentos que foram passados de geração em geração.</span></li>
+            <li><span class="icon-check">✅</span> <span>Tem um material simples para consultar pelo celular.</span></li>
+            <li><span class="icon-check">✅</span> <span>Mais organização para colocar em prática hábitos de cuidado e alimentação dentro da rotina familiar.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SEÇÃO EMOCIONAL: AVÓ → MÃE → FILHO -->
+    <section class="heritage-story-section">
+      <div style="max-width: 780px; margin: 0 auto;">
+        <span class="heritage-badge">📖 MEMÓRIA AFETIVA & AMOR</span>
+        <h2 class="section-title font-heading" style="font-size: 2.1rem; margin-top: 8px;">
+          👵 OS SEGREDOS QUE PASSAM DE GERAÇÃO EM GERAÇÃO
+        </h2>
+        
+        <p style="font-size: 1.1rem; color: var(--text-secondary); margin: 20px 0; line-height: 1.7;">
+          Sabe aquela receita que sua mãe aprendeu com sua avó?<br>
+          Aquele ingrediente simples que sempre estava na cozinha?<br>
+          Aquele cuidado com cheirinho de carinho que você cresceu vendo sua família fazer?<br><br>
+          <strong>O SOS Infantil nasceu para reunir esse tipo de conhecimento em um único material digital, para que esses ensinamentos não se percam com o tempo.</strong>
+        </p>
+
+        <div class="lineage-flow">
+          <div class="lineage-node">
+            <span>👵</span>
+            <span>AVÓ</span>
+          </div>
+          <span class="lineage-arrow">➔</span>
+          <div class="lineage-node">
+            <span>👩</span>
+            <span>MÃE</span>
+          </div>
+          <span class="lineage-arrow">➔</span>
+          <div class="lineage-node" style="border-color: var(--cta-green); background: #ECFDF5;">
+            <span>👶</span>
+            <span>FILHO</span>
+          </div>
+        </div>
+
+        <p style="font-size: 0.95rem; color: var(--text-muted); font-style: italic;">
+          "O maior legado que você pode construir na rotina dos seus filhos é o cuidado com raízes fortes."
+        </p>
+      </div>
+    </section>
+
+    <!-- 5. DEPOIMENTOS 01 (CARROSSEL ANIMADO COM IMAGENS REAIS) -->
+    <section class="testimonials-section">
+      <div class="section-header">
+        <span class="heritage-badge">💬 PROVA SOCIAL REAL</span>
+        <h2 class="section-title font-heading">💚 QUEM JÁ CONHECE, COMPARTILHA</h2>
+        <p class="section-subtitle">
+          Veja mensagens reais e espontâneas de mães que já aplicam esses ensinamentos de geração em geração em suas casas:
+        </p>
+      </div>
+
+      <div class="testimonials-carousel-wrapper">
+        <div id="testimonialsTrack" class="testimonials-track">
+          
+          <!-- Depoimento Juliana -->
+          <div class="testimonial-card-slide">
+            <div class="testimonial-img-card">
+              <img src="assets/images/depoimento-juliana.png" alt="Depoimento Juliana Pereira" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Depoimento Anna Elisa -->
+          <div class="testimonial-card-slide">
+            <div class="testimonial-img-card">
+              <img src="assets/images/depoimento-anna.png" alt="Depoimento Anna Elisa" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Depoimento Jana Martins -->
+          <div class="testimonial-card-slide">
+            <div class="testimonial-img-card">
+              <img src="assets/images/depoimento-jana.png" alt="Depoimento Jana Martins" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Depoimento Camila Souza -->
+          <div class="testimonial-card-slide">
+            <div class="testimonial-img-card">
+              <img src="assets/images/depoimento-camila.png" alt="Depoimento Camila Souza" loading="lazy">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controles do Carrossel -->
+        <div class="carousel-controls">
+          <button id="btnPrevTestimonial" class="carousel-btn" aria-label="Depoimento anterior">‹</button>
+          <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted);">Deslize para ver mais</span>
+          <button id="btnNextTestimonial" class="carousel-btn" aria-label="Próximo depoimento">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SEÇÃO: O QUE VOCÊ VAI ENCONTRAR DENTRO DO SOS INFANTIL -->
+    <section class="section-container">
+      <div class="section-header">
+        <span class="heritage-badge">📦 CONTEÚDO COMPLETO</span>
+        <h2 class="section-title font-heading">🍯 O QUE VOCÊ VAI ENCONTRAR DENTRO DO SOS INFANTIL</h2>
+        <p class="section-subtitle">
+          Um guia prático, acolhedor e visualmente dividido para consulta instantânea:
+        </p>
+      </div>
+
+      <div class="inside-grid">
+        <div class="inside-card">
+          <span class="inside-icon">🌿</span>
+          <h4>Receitas caseiras tradicionais</h4>
+          <p>Preparo de xaropes, caldos e infusões com proporções seguras e acolhedoras.</p>
+        </div>
+        <div class="inside-card">
+          <span class="inside-icon">🍯</span>
+          <h4>Ingredientes naturais</h4>
+          <p>O poder do mel, cebola, limão, gengibre e ervas aromáticas explicados sem rodeios.</p>
+        </div>
+        <div class="inside-card">
+          <span class="inside-icon">👵</span>
+          <h4>Conhecimentos de geração em geração</h4>
+          <p>Práticas consagradas que atravessaram décadas e nunca perdem sua eficácia.</p>
+        </div>
+        <div class="inside-card">
+          <span class="inside-icon">🍎</span>
+          <h4>Alimentação infantil acolhedora</h4>
+          <p>Orientações para criar uma rotina saborosa que as crianças realmente aceitam bem.</p>
+        </div>
+        <div class="inside-card">
+          <span class="inside-icon">🥕</span>
+          <h4>Ingredientes presentes na sua cozinha</h4>
+          <p>Nada de ingredientes exóticos ou caros: você usa o que já tem na despensa.</p>
+        </div>
+        <div class="inside-card">
+          <span class="inside-icon">🍵</span>
+          <h4>Preparos tradicionais fáceis</h4>
+          <p>Instruções passo a passo ilustradas para fazer rapidamente na hora da necessidade.</p>
+        </div>
+        <div class="inside-card">
+          <span class="inside-icon">🛡️</span>
+          <h4>Hábitos que fortalecem a rotina</h4>
+          <p>Orientações práticas de descanso, hidratação e ambiente que trazem equilíbrio.</p>
+        </div>
+        <div class="inside-card">
+          <span class="inside-icon">📱</span>
+          <h4>Material fácil de consultar pelo celular</h4>
+          <p>Em PDF diagramado com perfeição para telas de smartphone. Sempre com você.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. SEÇÃO: UMA ROTINA QUE AJUDA A FORTALECER A CRIANÇA -->
+    <section class="section-container" style="background: #FAF3E8; border-radius: var(--radius-lg); border: 1px solid #EFE4D2;">
+      <div class="section-header">
+        <span class="heritage-badge">🛡️ HÁBITOS DE OURO</span>
+        <h2 class="section-title font-heading">🛡️ UMA ROTINA QUE AJUDA A FORTALECER A CRIANÇA</h2>
+        <p class="section-subtitle">
+          Alimentação, frutas, nutrientes e bons hábitos fazem parte da construção de uma rotina sólida de cuidados diários.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; max-width: 820px; margin: 0 auto 30px;">
+        <span class="lineage-node" style="font-size: 0.9rem;">🍎 Frutas frescas</span>
+        <span class="lineage-node" style="font-size: 0.9rem;">🥕 Legumes variados</span>
+        <span class="lineage-node" style="font-size: 0.9rem;">🥦 Alimentos ricos</span>
+        <span class="lineage-node" style="font-size: 0.9rem;">🍯 Ingredientes puros</span>
+        <span class="lineage-node" style="font-size: 0.9rem;">💧 Boa hidratação</span>
+        <span class="lineage-node" style="font-size: 0.9rem;">🥣 Alimentação de verdade</span>
+        <span class="lineage-node" style="font-size: 0.9rem;">😴 Descanso reparador</span>
+        <span class="lineage-node" style="font-size: 0.9rem;">🌿 Cuidados caseiros</span>
+      </div>
+
+      <p style="text-align: center; font-size: 1.05rem; color: var(--text-primary); font-weight: 700; max-width: 650px; margin: 0 auto;">
+        O SOS Infantil reúne esses conhecimentos para ajudar você a organizar melhor esses cuidados no dia a dia, com menos ansiedade e mais segurança.
+      </p>
+    </section>
+
+    <!-- 8. SEÇÃO: COMO USAR O SOS INFANTIL (4 PASSOS) -->
+    <section class="section-container">
+      <div class="section-header">
+        <span class="heritage-badge">📖 MÉTODO SIMPLES</span>
+        <h2 class="section-title font-heading">📖 COMO USAR O SOS INFANTIL</h2>
+        <p class="section-subtitle">
+          Quatro passos intuitivos para transformar a sua relação com os cuidados infantis:
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-box">
+          <span class="step-number-tag">PASSO 01</span>
+          <div style="font-size: 2.2rem; margin-bottom: 10px;">🔍</div>
+          <h4 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px;">ENCONTRE</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">Encontre o ingrediente, receita ou desconforto rapidamente no índice pelo celular.</p>
+        </div>
+
+        <div class="step-box">
+          <span class="step-number-tag">PASSO 02</span>
+          <div style="font-size: 2.2rem; margin-bottom: 10px;">📖</div>
+          <h4 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px;">APRENDA</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">Veja as informações, medidas tradicionais e modo de preparo de forma descomplicada.</p>
+        </div>
+
+        <div class="step-box">
+          <span class="step-number-tag">PASSO 03</span>
+          <div style="font-size: 2.2rem; margin-bottom: 10px;">🌿</div>
+          <h4 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px;">ORGANIZE</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">Use o material para organizar seus conhecimentos e sua rotina com paz e clareza.</p>
+        </div>
+
+        <div class="step-box">
+          <span class="step-number-tag">PASSO 04</span>
+          <div style="font-size: 2.2rem; margin-bottom: 10px;">📱</div>
+          <h4 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px;">CONSULTE</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">Tenha o material disponível no seu celular sempre que você mais precisar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. SEÇÃO: 3 BÔNUS EXCLUSIVOS (PRODUTOS INDEPENDENTES) -->
+    <section class="section-container" style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 60px 20px;">
+      <div class="section-header">
+        <span class="heritage-badge">🎁 PRESENTES ESPECIAIS</span>
+        <h2 class="section-title font-heading">🎁 E AINDA TEM 3 BÔNUS EXCLUSIVOS</h2>
+        <p class="section-subtitle">
+          Adquirindo hoje, você leva sem custo adicional 3 materiais complementares desenvolvidos para enriquecer ainda mais sua rotina familiar:
+        </p>
+      </div>
+
+      <div class="bonuses-grid">
+        <!-- BÔNUS 1 -->
+        <div class="bonus-card">
+          <div class="bonus-cover-wrap">
+            <span class="bonus-badge-floating">BÔNUS 01 • 100% GRÁTIS</span>
+            <img src="assets/images/bonus-frutas.jpg" alt="Bônus 01 — O Poder das Frutas" class="bonus-cover-img" loading="lazy">
+          </div>
+          <div class="bonus-body">
+            <div>
+              <h3 class="bonus-title font-heading">🍎 O PODER DAS FRUTAS</h3>
+              <p class="bonus-desc">
+                Descubra os benefícios de cada fruta e saiba qual escolher para cada necessidade do seu filho: vitaminas, nutrientes e formas práticas de incluí-las na rotina diária.
+              </p>
+            </div>
+            <div class="bonus-pricing">
+              <span class="bonus-old-price">De R$ 47,00</span>
+              <span class="bonus-free-tag">HOJE: GRÁTIS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BÔNUS 2 -->
+        <div class="bonus-card">
+          <div class="bonus-cover-wrap">
+            <span class="bonus-badge-floating">BÔNUS 02 • 100% GRÁTIS</span>
+            <img src="assets/images/bonus-fortalecer.jpg" alt="Bônus 02 — Fortaleça a Imunidade" class="bonus-cover-img" loading="lazy">
+          </div>
+          <div class="bonus-body">
+            <div>
+              <h3 class="bonus-title font-heading">🥕 FORTALEÇA A IMUNIDADE</h3>
+              <p class="bonus-desc">
+                Descubra hábitos, alimentos e ingredientes naturais que ajudam a fortalecer a rotina saudável da criança, com ideias práticas para enriquecer o prato no dia a dia.
+              </p>
+            </div>
+            <div class="bonus-pricing">
+              <span class="bonus-old-price">De R$ 37,00</span>
+              <span class="bonus-free-tag">HOJE: GRÁTIS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BÔNUS 3 -->
+        <div class="bonus-card">
+          <div class="bonus-cover-wrap">
+            <span class="bonus-badge-floating">BÔNUS 03 • 100% GRÁTIS</span>
+            <img src="assets/images/bonus-tabela.jpg" alt="Bônus 03 — Tabela de Quantidade por Idade" class="bonus-cover-img" loading="lazy">
+          </div>
+          <div class="bonus-body">
+            <div>
+              <h3 class="bonus-title font-heading">📊 TABELA DE QUANTIDADE POR IDADE</h3>
+              <p class="bonus-desc">
+                Referências práticas de porções e quantidades de alimentos para cada fase da infância (de 1 a 14 anos). Uma consulta visual para eliminar qualquer dúvida nas refeições.
+              </p>
+            </div>
+            <div class="bonus-pricing">
+              <span class="bonus-old-price">De R$ 29,00</span>
+              <span class="bonus-free-tag">HOJE: GRÁTIS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. SEÇÃO: PARA QUEM É VS PARA QUEM NÃO É -->
+    <section class="section-container">
+      <div class="comparison-grid">
+        <!-- Para Quem É -->
+        <div class="comparison-box" style="background: #F0FDF4; border: 2px solid #86EFAC;">
+          <h3 style="color: #065F46; font-size: 1.35rem; font-weight: 800; margin-bottom: 18px;">
+            💚 Para quem é o SOS Infantil?
+          </h3>
+          <ul class="comparison-list">
+            <li><span class="icon-check">✓</span> <span>Mães que gostam de conhecer receitas caseiras tradicionais.</span></li>
+            <li><span class="icon-check">✓</span> <span>Quem quer resgatar conhecimentos que passaram pela família.</span></li>
+            <li><span class="icon-check">✓</span> <span>Mães que querem aprender mais sobre ingredientes naturais.</span></li>
+            <li><span class="icon-check">✓</span> <span>Quem quer melhorar a alimentação e o vigor da criança.</span></li>
+            <li><span class="icon-check">✓</span> <span>Quem gosta de ter informações organizadas em um único lugar.</span></li>
+            <li><span class="icon-check">✓</span> <span>Quem quer a comodidade de consultar o material pelo celular.</span></li>
+          </ul>
+        </div>
+
+        <!-- Para Quem Não É -->
+        <div class="comparison-box" style="background: #FEF2F2; border: 2px solid #FCA5A5;">
+          <h3 style="color: #991B1B; font-size: 1.35rem; font-weight: 800; margin-bottom: 18px;">
+            ⚠️ O SOS Infantil NÃO é para...
+          </h3>
+          <ul class="comparison-list">
+            <li><span class="icon-cross">✕</span> <span>Quem procura diagnóstico médico ou avaliação clínica.</span></li>
+            <li><span class="icon-cross">✕</span> <span>Quem espera uma promessa mágica de cura.</span></li>
+            <li><span class="icon-cross">✕</span> <span>Quem pretende substituir o acompanhamento pediátrico regular.</span></li>
+            <li><span class="icon-cross">✕</span> <span>Quem procura tratamento para situações de emergência grave.</span></li>
+          </ul>
+          
+          <div style="margin-top: 20px; padding: 12px; background: rgba(239, 68, 68, 0.1); border-radius: var(--radius-sm); font-size: 0.85rem; color: #991B1B; font-weight: 700;">
+            🚨 Em situações de emergência ou quando houver sinais de gravidade, procure atendimento médico profissional imediatamente.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. SEÇÃO DE OFERTA IRRESISTÍVEL (COM O BOTÃO VERDE CTA) -->
+    <section id="secaoOferta" class="section-container">
+      <div class="offer-box">
+        <div class="offer-ribbon">OFERTA VITALÍCIA</div>
+
+        <span class="heritage-badge">🎉 CONDIÇÃO EXCLUSIVA DE LANÇAMENTO</span>
+        
+        <h2 class="font-heading" style="font-size: 2.2rem; margin: 12px 0 6px; color: var(--text-primary);">
+          🌿 LEVE O SOS INFANTIL + 3 BÔNUS
+        </h2>
+
+        <p style="font-size: 1.05rem; color: var(--text-secondary);">
+          Acesso completo e vitalício a todos os conhecimentos de geração em geração:
+        </p>
+
+        <!-- Itens inclusos -->
+        <ul class="offer-items-list">
+          <li><span class="check-icon">✓</span> <span><strong>Guia SOS Infantil</strong> (Receitas e Cuidados Tradicionais)</span></li>
+          <li><span class="check-icon">✓</span> <span><strong>Bônus 1:</strong> O Poder das Frutas</span></li>
+          <li><span class="check-icon">✓</span> <span><strong>Bônus 2:</strong> Fortalecer a Alimentação</span></li>
+          <li><span class="check-icon">✓</span> <span><strong>Bônus 3:</strong> Tabela de Quantidade de Comida por Idade</span></li>
+          <li><span class="check-icon">✓</span> <span>Acesso Vitalício no Celular, Tablet e Computador</span></li>
+          <li><span class="check-icon">✓</span> <span>Entrega Imediata e Automática via E-mail</span></li>
+          <li><span class="check-icon">✓</span> <span>Garantia Incondicional de 7 Dias</span></li>
+        </ul>
+
+        <!-- Área de Preço -->
+        <div class="offer-price-area">
+          <div class="offer-old-price">De R$ 97,00</div>
+          <div class="offer-current-price">R$ 17,00</div>
+          <div class="offer-installments">ou 2x de R$ 8,92 no cartão</div>
+        </div>
+
+        <!-- Botão Principal de Alta Conversão -->
+        <div style="margin: 30px 0 16px;">
+          <a href="https://pay.cakto.com.br/a8cwrvz_1124406" target="_blank" rel="noopener" class="btn-cta pulse-animation btn-trigger-checkout">
+            <span>QUERO CRIAR MEU FILHO A PROVA DE DOENÇAS</span>
+            <span class="btn-arrow-icon">👉</span>
+          </a>
+        </div>
+
+        <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">
+          🔒 Pagamento 100% Seguro • Criptografia de 256 bits • Liberação Instantânea
+        </p>
+
+        <!-- Caixa de Garantia de 7 Dias -->
+        <div class="guarantee-box">
+          <div class="guarantee-icon">🛡️</div>
+          <div class="guarantee-text">
+            <h4>VOCÊ TEM 7 DIAS PARA CONHECER</h4>
+            <p>Você terá 7 dias para conhecer o material com calma. Se por qualquer motivo você decidir que não é para você, basta solicitar o reembolso que devolveremos 100% do valor pago.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. DEPOIMENTOS 02 (GRADE ESTILIZADA DE PROVA SOCIAL) -->
+    <section class="section-container" style="padding-top: 20px;">
+      <div class="section-header">
+        <span class="heritage-badge">❤️ FAMÍLIAS AGRADECIDAS</span>
+        <h2 class="section-title font-heading">🌿 MAIS MÃES DESCOBRINDO OS CONHECIMENTOS DE GERAÇÃO EM GERAÇÃO</h2>
+        <p class="section-subtitle">
+          A tranquilidade de ter em casa os mesmos ensinamentos acolhedores que atravessaram gerações:
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 900px; margin: 0 auto;">
+        <div class="testimonial-img-card">
+          <img src="assets/images/depoimento-jana.png" alt="Depoimento Jana Martins" loading="lazy">
+        </div>
+        <div class="testimonial-img-card">
+          <img src="assets/images/depoimento-anna.png" alt="Depoimento Anna Elisa" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. FAQ ACCORDION -->
+    <section class="section-container">
+      <div class="section-header">
+        <span class="heritage-badge">❓ DÚVIDAS FREQUENTES</span>
+        <h2 class="section-title font-heading">Perguntas Frequentes</h2>
+        <p class="section-subtitle">
+          Tire suas dúvidas antes de garantir o seu acesso:
+        </p>
+      </div>
+
+      <div class="faq-container">
+        <!-- Q1 -->
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>O que é exatamente o SOS Infantil?</span>
+            <span class="faq-icon-toggle">▼</span>
+          </button>
+          <div class="faq-answer">
+            O SOS Infantil é um material digital diagramado como um antigo caderno de receitas moderno. Ele reúne receitas caseiras tradicionais, orientações sobre ingredientes naturais (como mel, cebola, limão, gengibre), conteúdos sobre alimentação infantil e a sabedoria passada de geração em geração, tudo organizado de forma prática para consulta imediata no seu celular.
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>É um livro físico?</span>
+            <span class="faq-icon-toggle">▼</span>
+          </button>
+          <div class="faq-answer">
+            Não. É um material 100% digital em formato PDF de alta qualidade. Você recebe imediatamente após o pagamento no seu e-mail e pode ler no celular, tablet, computador ou até mesmo imprimir se preferir.
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Como recebo o acesso?</span>
+            <span class="faq-icon-toggle">▼</span>
+          </button>
+          <div class="faq-answer">
+            Após a confirmação do pagamento, você recebe os dados de acesso automaticamente no seu e-mail. Para pagamentos via Pix ou Cartão, a liberação é imediata (leva menos de 1 minuto).
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Tenho acesso por quanto tempo?</span>
+            <span class="faq-icon-toggle">▼</span>
+          </button>
+          <div class="faq-answer">
+            O seu acesso é vitalício! O arquivo fica disponível para você baixar e consultar sempre que precisar, sem assinaturas mensais ou cobranças adicionais.
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Quais são os bônus inclusos?</span>
+            <span class="faq-icon-toggle">▼</span>
+          </button>
+          <div class="faq-answer">
+            Você recebe 3 bônus exclusivos gratuitamente: 1) O Guia "O Poder das Frutas"; 2) O Guia "Fortalecer a Alimentação"; e 3) A "Tabela de Quantidade de Comida por Idade".
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>O SOS Infantil substitui consulta médica?</span>
+            <span class="faq-icon-toggle">▼</span>
+          </button>
+          <div class="faq-answer">
+            Não. O material é educativo e de resgate cultural/nutricional. Ele não substitui avaliação, diagnóstico ou tratamento de pediatras ou profissionais habilitados. Em caso de dúvidas clínicas ou sintomas preocupantes, consulte sempre o seu médico.
+          </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Posso acessar pelo celular?</span>
+            <span class="faq-icon-toggle">▼</span>
+          </button>
+          <div class="faq-answer">
+            Sim! Toda a diagramação foi planejada especificamente para abrir com extrema facilidade e clareza na tela de qualquer smartphone.
+          </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Existe garantia?</span>
+            <span class="faq-icon-toggle">▼</span>
+          </button>
+          <div class="faq-answer">
+            Sim! Você tem 7 dias de garantia incondicional. Se não gostar do conteúdo por qualquer motivo, devolveremos 100% do seu dinheiro.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. CTA FINAL EMOCIONAL -->
+    <section class="section-container" style="text-align: center; padding-bottom: 80px;">
+      <div style="background: linear-gradient(135deg, #FAF7F2 0%, #F5EDE1 100%); border: 2px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 50px 24px; box-shadow: var(--shadow-md); max-width: 800px; margin: 0 auto;">
+        <span class="heritage-badge">🌿 CUIDAR TAMBÉM É ESTAR PREPARADA</span>
+        
+        <h2 class="font-heading" style="font-size: 2.1rem; margin: 16px 0 14px; color: var(--text-primary);">
+          LEVE PARA CASA OS CONHECIMENTOS QUE PASSARAM DE GERAÇÃO EM GERAÇÃO
+        </h2>
+        
+        <p style="font-size: 1.05rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto 28px;">
+          Tenha receitas caseiras, ingredientes naturais, conteúdos de alimentação e os 3 bônus organizados em um único material para consultar sempre que precisar.
+        </p>
+
+        <div style="font-size: 3rem; font-weight: 900; color: #065F46; font-family: 'Outfit', sans-serif; margin-bottom: 24px;">
+          R$ 17,00
+        </div>
+
+        <div style="margin-bottom: 18px;">
+          <a href="https://pay.cakto.com.br/a8cwrvz_1124406" target="_blank" rel="noopener" class="btn-cta pulse-animation btn-trigger-checkout">
+            <span>QUERO CRIAR MEU FILHO A PROVA DE DOENÇAS</span>
+            <span class="btn-arrow-icon">👉</span>
+          </a>
+        </div>
+
+        <p style="font-size: 0.85rem; color: var(--text-muted);">
+          Acesso vitalício • Entrega automática • Satisfação garantida
+        </p>
+      </div>
+    </section>
+
+    <!-- 15. RODAPÉ LEGAL -->
+    <footer class="footer-legal">
+      <div class="medical-disclaimer-box">
+        <strong>Aviso de Responsabilidade:</strong> O SOS Infantil — Remédios Caseiros de Geração em Geração é um material informativo e educativo sobre tradições caseiras e nutrição familiar. Ele não substitui consultas médicas, diagnósticos, tratamentos farmacológicos ou atendimento pediátrico de emergência. Sempre consulte um médico ou pediatra capacitado para avaliar a condição de saúde individual da sua criança.
+      </div>
+
+      <div style="margin-bottom: 16px; font-weight: 700;">
+        SOS Infantil © 2026 • Todos os direitos reservados.
+      </div>
+
+      <div style="display: flex; justify-content: center; gap: 20px; font-size: 0.82rem; margin-bottom: 12px;">
+        <a href="#politica" onclick="alert('Política de Privacidade: Seus dados estão 100% seguros e não são compartilhados com terceiros.'); return false;">Política de Privacidade</a>
+        <a href="#termos" onclick="alert('Termos de Uso: O material SOS Infantil é para uso pessoal e intransferível.'); return false;">Termos de Uso</a>
+        <a href="#contato" onclick="alert('Suporte: Envie uma mensagem para suporte@sosinfantil.com.br'); return false;">Contato & Suporte</a>
+      </div>
+
+      <p style="font-size: 0.75rem; color: #7B7167;">
+        Este site não é afiliado ao Facebook, Google ou a qualquer plataforma de anúncios.
+      </p>
+    </footer>
+
+    <!-- STICKY CTA MOBILE (Aparece no scroll) -->
+    <div id="stickyMobileCta" class="sticky-mobile-cta">
+      <div class="sticky-cta-info">
+        <span class="sticky-cta-title">SOS Infantil + 3 Bônus</span>
+        <span class="sticky-cta-price">R$ 17,00</span>
+      </div>
+      <a href="https://pay.cakto.com.br/a8cwrvz_1124406" target="_blank" rel="noopener" class="btn-cta pulse-animation btn-trigger-checkout" style="padding: 12px 18px; font-size: 0.88rem;">
+        <span>QUERO ACESSAR</span>
+        <span class="btn-arrow-icon">👉</span>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
